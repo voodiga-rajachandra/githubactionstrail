@@ -14,7 +14,7 @@ jobs:
           distribution: 'temurin'
           java-version: '21'
 
-      - run: mvn clean install -DskipTests
+      - run: mvn clean verify
 
       - run: mvn sonar:sonar 
           -Dsonar.projectKey=githubact
